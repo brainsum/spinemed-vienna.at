@@ -3,7 +3,7 @@
 .iconline-holder {
 	background-color: $blue;
 	padding-top: 40px;
-	padding-bottom: 45px;
+	padding-bottom: 15px;
 	color: $white;
 
 	h2 {
@@ -18,6 +18,9 @@
 		text-align: center;
 		&.odd {
 			clear: both;
+			@media (min-width: $screen-sm-min) {
+				clear: none;
+			}
 		}
 
 		p {

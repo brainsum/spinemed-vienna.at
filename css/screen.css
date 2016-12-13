@@ -2719,7 +2719,7 @@ footer .footer-menu-item a {
 .iconline-holder {
   background-color: #3fa3bf;
   padding-top: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 15px;
   color: #ffffff;
 }
 .iconline-holder h2 {
@@ -2736,6 +2736,11 @@ footer .footer-menu-item a {
 }
 .iconline-holder .icon-holder.odd {
   clear: both;
+}
+@media (min-width: 768px) {
+  .iconline-holder .icon-holder.odd {
+    clear: none;
+  }
 }
 .iconline-holder .icon-holder p {
   font-family: 'Ubuntu', sans-serif;

@@ -7,41 +7,83 @@
 	.intro-text {
 		padding-top: 60px;
 		/*padding-bottom: 80px;*/
+	}
 
-		img {
-			width: 190px;
+	.spinemed-logo {
+		width: 190px;
+		display: block;
+		margin: 0 auto 10px;
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 10px;
 		}
 	}
 
 	h1 {
 		@include UbuntuMedium;
-		@include line-height(36, 40);
+		@include line-height(24, 30);
 		color: $dark-blue-txt;
 		text-transform: uppercase;
 		margin-top: 12px;
 		margin-bottom: 12px;
-		font-size: $font36px;
+		font-size: $font24px;
+		text-align: center;
+		@media (min-width: $screen-sm-min) {
+			font-size: $font30px;
+			@include line-height(30, 40);
+		}
+		@media (min-width: $screen-md-min) {
+			text-align: start;
+			font-size: $font36px;
+			@include line-height(36, 40);
+		}
 	}
 
 	h3 {
 		@include UbuntuBold;
 		font-size: $font16px;
 		margin-top: 22px;
-		max-width: 50%;
-		float: left;
+		text-align: center;
 		text-transform: uppercase;
+		max-width: 92%;
+		@media (min-width: $screen-sm-min) {
+			float: left;
+			max-width: 55%;
+			margin-right: 3%;
+			text-align: start;
+		}
 	}
 
 	p {
 		font-size: $font14px;
+		text-align: center;
+		@media (min-width: $screen-sm-min) {
+			text-align: start;
+		}
+	}
+
+	.healthpi-logo {
+		mix-blend-mode: multiply;
+		display: block;
+		margin: 22px auto;
+		@media (min-width: $screen-sm-min) {
+			margin: 22px 0 0;
+		}
 	}
 
 	.intro-img {
 		height: 100%;
 
 		img {
-			height: 100%;
+			max-width: 100%;
+			height: auto;
 			width: auto;
+			display: block;
+			margin: 0 auto;
+			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+				width: 115%;
+				max-width: none;
+			}
+
 		}
 	}
 }

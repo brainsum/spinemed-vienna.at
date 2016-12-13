@@ -14,7 +14,20 @@
 	}
 
 	.phone-holder {
-		padding-top: 5px;
+		text-align: center;
+		line-height: 1.68;
+		margin-bottom: 20px;
+		@media (min-width: $screen-md-min) {
+			text-align: end;
+			margin-bottom: 0;
+		}
+		@media (min-width: $screen-lg-min) {
+			text-align: start;
+		}
+		h2,
+		img {
+			display: inline-block;
+		}
 	}
 
 	h2 {
@@ -25,7 +38,7 @@
 
 	img {
 		margin-right: 20px;
-		margin-top: 5px;
+		margin-top: -5px;
 	}
 
 	.contact-btn {
@@ -33,7 +46,6 @@
 		@include border-top-radius(4px);
 		@include UbuntuBold;
 		display: block;
-		height: 50px;
 		width: 100%;
 		background-color: $white;
 		border: 2px solid $light-blue;

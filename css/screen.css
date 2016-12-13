@@ -2680,20 +2680,43 @@ footer .footer-menu-item a {
   padding-top: 60px;
   /*padding-bottom: 80px;*/
 }
-.intro-holder .intro-text img {
+.intro-holder .spinemed-logo {
   width: 190px;
+  display: block;
+  margin: 0 auto 10px;
+}
+@media (min-width: 992px) {
+  .intro-holder .spinemed-logo {
+    margin: 0 0 10px;
+  }
 }
 .intro-holder h1 {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
-  margin-top: -2px;
+  line-height: 30px;
+  margin-top: -3px;
   color: #0b6180;
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 12px;
-  font-size: 2.25em;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .intro-holder h1 {
+    font-size: 1.966em;
+    line-height: 40px;
+    margin-top: -5px;
+  }
+}
+@media (min-width: 992px) {
+  .intro-holder h1 {
+    text-align: start;
+    font-size: 2.25em;
+    line-height: 40px;
+    margin-top: -2px;
+  }
 }
 .intro-holder h3 {
   font-family: 'Ubuntu', sans-serif;
@@ -2701,19 +2724,52 @@ footer .footer-menu-item a {
   font-weight: 700;
   font-size: 1em;
   margin-top: 22px;
-  max-width: 50%;
-  float: left;
+  text-align: center;
   text-transform: uppercase;
+  max-width: 92%;
+}
+@media (min-width: 768px) {
+  .intro-holder h3 {
+    float: left;
+    max-width: 55%;
+    margin-right: 3%;
+    text-align: start;
+  }
 }
 .intro-holder p {
   font-size: 0.875em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .intro-holder p {
+    text-align: start;
+  }
+}
+.intro-holder .healthpi-logo {
+  mix-blend-mode: multiply;
+  display: block;
+  margin: 22px auto;
+}
+@media (min-width: 768px) {
+  .intro-holder .healthpi-logo {
+    margin: 22px 0 0;
+  }
 }
 .intro-holder .intro-img {
   height: 100%;
 }
 .intro-holder .intro-img img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   width: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .intro-holder .intro-img img {
+    width: 115%;
+    max-width: none;
+  }
 }
 
 .iconline-holder {
@@ -2769,7 +2825,24 @@ footer .footer-menu-item a {
   margin-bottom: 35px;
 }
 .information-line .phone-holder {
-  padding-top: 5px;
+  text-align: center;
+  line-height: 1.68;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .information-line .phone-holder {
+    text-align: end;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .information-line .phone-holder {
+    text-align: start;
+  }
+}
+.information-line .phone-holder h2,
+.information-line .phone-holder img {
+  display: inline-block;
 }
 .information-line h2 {
   font-family: 'Ubuntu', sans-serif;
@@ -2780,7 +2853,7 @@ footer .footer-menu-item a {
 }
 .information-line img {
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: -5px;
 }
 .information-line .contact-btn {
   border-bottom-right-radius: 4px;
@@ -2791,7 +2864,6 @@ footer .footer-menu-item a {
   font-style: normal;
   font-weight: 700;
   display: block;
-  height: 50px;
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #49c2d8;

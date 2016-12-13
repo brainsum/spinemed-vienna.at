@@ -1,0 +1,365 @@
+@import 'variables';
+@import 'tools/mixins';
+
+// FONTS
+////////
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500,700');
+
+@mixin UbuntuMedium {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@mixin UbuntuBold {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@mixin OpenSansRegular {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
+
+@mixin LibreItalic {
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+// PLACEHOLDERS
+///////////////
+
+%logo {
+	@include UbuntuBold;
+	font-size: 18.4px;
+	color: $blue-txt;
+	display: block;
+
+	span {
+		@include LibreItalic;
+		font-size: 17.56px;
+		color: $grey-txt;
+	}
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	@include OpenSansRegular;
+	font-size: $font16px; // font-size: 16px;
+	color: $grey-txt;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+a {
+	text-decoration: none !important;
+	font-style: normal;
+	font-weight: normal;
+	cursor: pointer;
+	color: $grey-txt;
+
+	&:hover {
+
+	}
+}
+
+h1,
+h2,
+p {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin: 0;
+	-webkit-padding-start: auto;
+	-webkit-padding-end: auto;
+}
+
+ul,
+ol {
+	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+// placeholder
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	font-style: normal;
+	font-size: $font14px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	font-style: normal;
+	font-size: $font14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	font-style: normal;
+	font-size: $font14px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-style: normal;
+	font-size: $font14px;
+}
+
+
+
+
+// SAMPLE CLASSES
+/////////////////
+
+@include breakpoint(lg) {
+	.sampleClass {
+		float: right;
+	}
+}
+
+@include breakpoint(md) {
+	.sampleClass {
+		float: none;
+	}
+}
+
+@include breakpoint(sm) {
+	.sampleClass {
+		float: left;
+	}
+}
+
+
+// BUTTONS
+//////////
+
+
+
+// HELPERS
+//////////
+
+.pd0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pdr0 {
+	padding-right: 0;
+}
+
+.pdb50 {
+	padding-bottom: 50px;
+}
+
+.pdb130 {
+	padding-bottom: 130px;
+}
+
+.pdt120 {
+	padding-top: 120px;
+}
+
+.mgb25 {
+	margin-bottom: 25px;
+}
+
+.mgb30 {
+	margin-bottom: 30px;
+}
+
+.mgt30 {
+	margin-top: 30px;
+}
+
+.mgt45 {
+	margin-top: 45px;
+}
+
+.mgt85 {
+	margin-top: 85px;
+}
+
+.mgt280 {
+	margin-top: 280px;
+}
+
+:focus {
+	outline: -webkit-focus-ring-color 0;
+}
+
+.section-holder {
+	margin-bottom: 80px;
+}
+
+.center-txt {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.visible {
+	// @include opacity(1);
+	opacity: 1 !important;
+	visibility: visible !important;
+	display: block;
+}
+
+.content-box {
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.content-txt {
+	float: left;
+}
+
+.title-txt {
+	text-align: center;
+}
+
+
+// UNSLIDER
+//////////////
+
+.slider-dots {
+	margin-bottom: 80px;
+	margin-top: 510px;  // todo	del this margin
+	text-align: center;
+}
+
+.dark-slider {
+	.unslider-arrow {
+		color: $grey;
+		margin-top: -135px;
+	}
+
+	.unslider-nav ol li {
+		background: $grey;
+		border: 2px solid $grey;
+		margin: 0 15px;
+
+		&.unslider-active {
+			background: $grey;
+		}
+	}
+}
+
+// NAVTABS
+//////////
+
+.nav-tabs-horizontal {
+	height: 15px;
+	width: 465px;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 80px;
+
+	> li {
+		float: left;
+		text-align: center;
+		padding: 0 30px;
+		position: relative;
+
+		&:after {
+
+			content: '-';
+			position: absolute;
+			right: -3px;
+		}
+
+		&:last-child:after {
+			content: '';
+		}
+
+		> a {
+
+			font-size: $font14px;
+			display: inline-block;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+		&.active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $orange;
+				cursor: default;
+			}
+		}
+	}
+}
+
+// Tabbable tabs
+// -------------------------
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+	> .tab-pane {
+		display: none;
+	}
+	> .active {
+		display: block;
+	}
+}
+
+// Dropdowns
+// -------------------------
+// Specific dropdowns
+.nav-tabs .dropdown-menu {
+	// make dropdown border overlap tab border
+	margin-top: -1px;
+	// Remove the top rounded corners here since there is a hard edge above the menu
+	@include border-top-radius(0);
+}
+
+@include breakpoint(md) {
+	.collapse {
+		display: block;
+	}
+}
+
+
+.modal-body  {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+
+	.video {
+		border: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

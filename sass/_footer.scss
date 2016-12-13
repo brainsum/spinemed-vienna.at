@@ -1,0 +1,50 @@
+@import 'variables';
+
+footer {
+	padding-top: 65px;
+	padding-bottom: 80px;
+	background-color: $darkest-blue;
+	color: $white;
+
+	.footer-logo {
+		@extend %logo;
+		color: $white;
+		font-size: 25.95px;
+		margin-bottom: 12px;
+
+		span {
+			color: $white;
+			font-size: 24.77px;
+		}
+	}
+
+	p,
+	a {
+		color: $white;
+		font-size: $font13px;
+	}
+
+	.footer-menu {
+		margin-top: 20px;
+		float: right;
+	}
+
+	.footer-menu-item {
+		float: left;
+		margin-left: 45px;
+
+		a {
+			@include UbuntuBold;
+			color: $blue;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+
+
+
+
+

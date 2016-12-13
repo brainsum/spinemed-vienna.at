@@ -1,0 +1,26 @@
+{
+  "name": "SpineMED",
+  "version": "1.0.0",
+  "description": "SpineMED website",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "z-visual studio, Brainsum",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-file-creator": "^0.1.3",
+    "grunt-html": "^7.0.0",
+    "grunt-php2html": "^0.2.0",
+    "grunt-purifycss": "^0.1.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.2.2"
+  }
+}

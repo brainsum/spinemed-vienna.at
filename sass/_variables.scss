@@ -1,0 +1,135 @@
+
+// SCREEN SIZES
+///////////////
+
+$xs-max-width: 767px;
+$sm-min-width: 768px;
+$md-min-width: 992px;
+$lg-min-width: 1200px;
+
+// FONT SIZES
+///////////////
+
+$font60px: 3.932em;
+$font56px: 3.500em;
+$font52px: 3.250em;
+$font51px: 3.188em;
+$font50px: 3.126em;
+$font48px: 3.000em;
+$font45px: 2.813em;
+$font42px: 2.626em;
+$font38px: 2.375em;
+$font36px: 2.250em;
+$font34px: 2.125em;
+$font30px: 1.966em;
+$font28px: 1.750em;
+$font25px: 1.563em;
+$font24px: 1.500em;
+$font23px: 1.438em;
+$font22px: 1.375em;
+$font21px: 1.313em;
+$font20px: 1.250em;
+$font19px: 1.188em;
+$font18px: 1.125em;
+$font17px: 1.063em;
+$font16px: 1.000em;
+$font15px: .983em;
+$font14px: .875em;
+$font13px: .813em;
+$font12px: .750em;
+
+// BASIC-COLORS
+/////////
+
+$white: #ffffff;
+$light-grey: #eeeeee;
+$grey: #707070;
+$black: #000000;
+$green: #54a824;
+$orange: #e67526;
+$blue: #3fa3bf;
+$dark-blue: #0b6180;
+$darkest-blue: #204e5f;
+$light-blue: #49c2d8;
+
+// BACKGROUND-COLORS
+////////////////////
+$lightgrey-bgr: $light-grey;
+$blue-bgr: $blue;
+$darkblue-bgr: $dark-blue;
+$lightblue-bgr: $light-blue;
+
+// TEXT-COLORS
+//////////////
+$grey-txt: $grey;
+$white-txt: $white;
+$blue-txt: $blue;
+$dark-blue-txt: $dark-blue;
+
+// MIXINS
+/////////
+
+@mixin letter-spacing($letterspacing) {
+	letter-spacing: $letterspacing/1000 + em;
+}
+
+@mixin line-height($fontsize, $lineheight){
+
+	line-height: ($lineheight) + px;
+	//line-height: ($lineheight/10) + em;
+
+	margin-top: (($lineheight - $fontsize)/2 * -1) + px;
+	// margin-top: ((($lineheight - $fontsize)/2 * -1) / 10 ) + em
+}
+
+// Media query breakpoint
+/////////////////////////
+
+@mixin breakpoint($point) {
+	@if $point == lg { // 1200px and up
+			@media (min-width: $screen-lg-min) { @content; }
+	}  @else if $point == md { // 992px an up
+			@media (min-width: $screen-md-min) { @content; }
+	}  @else if $point == sm { // 768px and up
+			@media (min-width: $screen-sm-min)  { @content; }
+	}
+}
+
+// Media query max breakpoint
+/////////////////////////
+
+@mixin breakpointMax($point) {
+	@if $point == lg { // 1200px and up
+		@media (max-width: $screen-lg-min) { @content; }
+	}  @else if $point == md { // 992px an up
+		@media (max-width: $screen-md-min) { @content; }
+	}  @else if $point == sm { // 768px and up
+		@media (max-width: $screen-sm-min)  { @content; }
+	}  @else if $point == xs { // 767px
+		@media (max-width: $screen-xs-max)  { @content; }
+	} @else if $point == thin { // 720px height
+		@media (max-height: 720px)  { @content; }
+	}
+}
+
+// Screen orientation breakpoint
+////////////////////////////////
+
+@mixin orientation($position) {
+	@if $position == landscape {
+		@media only screen and (orientation : landscape) { @content; }
+	} @else if $position == portrait {
+		@media only screen and (orientation : portrait) { @content; }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

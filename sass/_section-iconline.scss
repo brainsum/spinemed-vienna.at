@@ -1,0 +1,40 @@
+@import 'variables';
+
+.iconline-holder {
+	background-color: $blue;
+	padding-top: 40px;
+	padding-bottom: 45px;
+	color: $white;
+
+	h2 {
+		@include UbuntuMedium;
+		font-size: $font36px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.icon-holder {
+		text-align: center;
+		&.odd {
+			clear: both;
+		}
+
+		p {
+			@include UbuntuBold;
+			@include line-height(14, 18);
+			font-size: $font14px;
+			text-transform: uppercase;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+@import 'variables';
+
+.intro-holder {
+	background-image: url('../img/top-grey-bgr.png');
+	background-size: cover;
+
+	.intro-text {
+		padding-top: 60px;
+		/*padding-bottom: 80px;*/
+
+		img {
+			width: 190px;
+		}
+	}
+
+	h1 {
+		@include UbuntuMedium;
+		@include line-height(36, 40);
+		color: $dark-blue-txt;
+		text-transform: uppercase;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		font-size: $font36px;
+	}
+
+	h3 {
+		@include UbuntuBold;
+		font-size: $font16px;
+		margin-top: 22px;
+		max-width: 50%;
+		float: left;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: $font14px;
+	}
+
+	.intro-img {
+		height: 100%;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

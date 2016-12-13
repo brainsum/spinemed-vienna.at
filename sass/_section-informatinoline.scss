@@ -1,0 +1,50 @@
+@import 'variables';
+
+.information-line {
+	background-color: $white;
+	padding-top: 50px;
+	padding-bottom: 65px;
+
+	h3 {
+		@include UbuntuMedium;
+		font-size: $font18px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	.phone-holder {
+		padding-top: 5px;
+	}
+
+	h2 {
+		@include UbuntuMedium;
+		font-size: $font30px;
+		color: $light-blue;
+	}
+
+	img {
+		margin-right: 20px;
+		margin-top: 5px;
+	}
+
+	.contact-btn {
+		@include border-bottom-radius(4px);
+		@include border-top-radius(4px);
+		@include UbuntuBold;
+		display: block;
+		height: 50px;
+		width: 100%;
+		background-color: $white;
+		border: 2px solid $light-blue;
+		text-align: center;
+		line-height: 48px;
+		font-size: $font14px;
+		text-transform: uppercase;
+		color: $light-blue;
+
+		&:hover {
+			background-color: $light-grey;
+		}
+	}
+}

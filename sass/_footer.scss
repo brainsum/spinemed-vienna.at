@@ -18,7 +18,10 @@ footer {
 			font-size: 24.77px;
 		}
 	}
-
+    a.pull-left:hover{
+        color: white;
+        text-decoration: underline;
+    }
 	p,
 	a {
 		color: $white;
@@ -38,7 +41,14 @@ footer {
 			@include UbuntuBold;
 			color: $blue;
 			text-transform: uppercase;
+            transition: color 0.25s;
+            &:hover{
+                color: white;
+            }
 		}
+        &.is-active a{
+            color: white;
+        }
 	}
 }
 

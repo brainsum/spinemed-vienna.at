@@ -1,6 +1,6 @@
 module.exports = {
 	// theme machine name
-	theme: '',
+	theme: '/',
 	// add additional required files to be copied to their respective destinations
 	external: {
 		src: [],
@@ -24,11 +24,11 @@ module.exports = {
 	// Broswersync options
 	// to learn more about Broswersync and possible configuration options please visit: https://www.browsersync.io/docs/options
 	browserSync: {
-		open: false,
+		open: true,
 		serveStatic: ['.'],
 		port: 3000,
 		proxy: {
-			target: 'http://spinemed.hungary56.com/'
+			target: 'http://spinemed.hungary56.com'
 		}
 	}
 };

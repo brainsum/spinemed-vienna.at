@@ -4,6 +4,8 @@
 // Container widths
 //
 // Set the container width, and override it for fixed navbars in media queries.
+$container-subpage: 820px;
+
 .container {
   @include container-fixed;
   @media (min-width: $screen-sm-min) {
@@ -15,6 +17,9 @@
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
+    &.container-subpage{
+        max-width: $container-subpage;
+    }
 }
 
 // Fluid container

@@ -1,0 +1,11 @@
+.section-ablauf-holder {
+    background-color: $light-grey;
+    .blue-button-holder {
+        display: block;
+        text-align: center;
+        a.blue-button{
+            display: inline-block;
+            margin: 30px auto;
+        }
+    }
+}

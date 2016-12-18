@@ -1,0 +1,47 @@
+@import 'variables';
+.funktionsweise {
+    background-color: $light-grey;
+    &.top {
+        background-color: $grey-bg;
+        background: linear-gradient(to bottom, $grey-bg 0%, $grey-bg 65%, white 65%);
+        padding-bottom: 80px;
+        .img-holder {
+            padding-top: 40px;
+            max-width: 920px;
+            margin: 0 auto;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    &.bottom {
+        background-color: $blue-bg;
+        color: white;
+        p{
+            padding-bottom: 15px;
+        }
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 55px;
+            padding-bottom: 30px;
+            font-size: $font30px;
+        }
+        ul {
+            li {
+                border-bottom: 1px solid $blue;
+                padding: 10px 0;
+                line-height: 22px;
+                font-size: 0.875em;
+                &:before {
+                    content: url(../img/list-image.png);
+                    display: inline-block;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .col-md-6 ul li:first-child{
+            border-top: 1px solid $blue;
+        }
+    }
+}

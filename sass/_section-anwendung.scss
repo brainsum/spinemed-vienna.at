@@ -2,9 +2,7 @@
 
 .anwendung-holder {
 	padding-top: 50px;
-	padding-bottom: 80px;
 	background-color: $light-grey;
-
 	.img-holder img {
 		border: 8px solid $white;
 		margin-bottom: 50px;
@@ -36,53 +34,6 @@
 	p {
 		@include line-height(14, 22);
 		font-size: $font14px;
-	}
-
-	.big-btn {
-		@include border-bottom-radius(4px);
-		@include border-top-radius(4px);
-		@include transition(backgound-color, .3s);
-		height: 150px;
-		width: 100%;
-		padding-top: 45px;
-		padding-left: 30px;
-		background-color: $blue;
-		color: $white;
-
-		.icon-holder {
-			float: left;
-			margin-right: 25px;
-		}
-
-		&:hover {
-			background-color: darken($blue, 5%);
-			cursor: pointer;
-		}
-	}
-
-	.darken {
-		background-color: $dark-blue;
-
-		&:hover {
-			background-color: darken($dark-blue, 5%);
-		}
-	}
-
-	.lighten {
-		background-color: $light-blue;
-
-		&:hover {
-			background-color: darken($light-blue, 5%);
-		}
-	}
-
-
-	h3 {
-		@include UbuntuMedium;
-		@include line-height(20, 24);
-		font-size: $font20px;
-		text-transform: uppercase;
-		margin-bottom: 5px;
 	}
 }
 

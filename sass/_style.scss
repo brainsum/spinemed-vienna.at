@@ -1,0 +1,115 @@
+@import 'variables';
+h1.sub-page-title {
+    font-size: $font45px;
+    padding-bottom: 10px;
+    color: $dark-blue-txt;
+}
+
+h2.sub-page-title {
+    font-size: $font30px;
+    color: $grey-txt;
+}
+
+.sub-page-title {
+    @include UbuntuMedium;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 12px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    &:after {
+        content: '';
+        height: 1px;
+        width: 70px;
+        background-color: $blue;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
+
+.container-subpage {
+    p {
+        line-height: 22px;
+        margin-top: -4px;
+        font-size: 0.875em;
+    }
+    .img-holder img {
+        max-width: 100%;
+    }
+}
+
+.subpage-vertical-buttons-holder {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 0 85px;
+    a {
+        .big-btn {
+            @include border-bottom-radius(4px);
+            @include border-top-radius(4px);
+            @include transition(backgound-color, .3s);
+            height: 150px;
+            width: 100%;
+            padding-top: 45px;
+            padding-left: 30px;
+            background-color: $blue;
+            color: $white;
+            .icon-holder {
+                float: left;
+                margin-right: 25px;
+            }
+            &.darken {
+                background-color: $dark-blue;
+            }
+            &.lighten {
+                background-color: $light-blue;
+            }
+            &.white {
+                background-color: white;
+                color: $dark-blue;
+            }
+        }
+        h3 {
+            @include UbuntuMedium;
+            @include line-height(20, 24);
+            font-size: $font20px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        p {
+            @include line-height(14, 22);
+            font-size: $font14px;
+        }
+        &:hover {
+            .big-btn {
+                background-color: darken($blue, 5%);
+                cursor: pointer;
+            }
+            .darken {
+                background-color: darken($dark-blue, 5%);
+            }
+            .lighten {
+                background-color: darken($light-blue, 5%);
+            }
+            .white {
+                background-color: rgba(white, 0.8);
+            }
+        }
+    }
+}
+
+a.blue-button {
+    @include UbuntuBold;
+    @include border-bottom-radius(4px);
+    @include border-top-radius(4px);
+    border: 0;
+    background-color: $light-blue;
+    color: $white;
+    font-size: $font14px;
+    padding: 15px 90px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}

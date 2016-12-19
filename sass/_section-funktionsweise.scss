@@ -3,7 +3,10 @@
     background-color: $light-grey;
     &.top {
         background-color: $grey-bg;
-        background: linear-gradient(to bottom, $grey-bg 0%, $grey-bg 65%, white 65%);
+        background: $grey-bg;
+        @include breakpoint(sm){
+            background: linear-gradient(to bottom, $grey-bg 0%, $grey-bg 65%, white 65%);
+        }
         padding-bottom: 80px;
         .img-holder {
             padding-top: 40px;
@@ -30,13 +33,16 @@
         ul {
             li {
                 border-bottom: 1px solid $blue;
-                padding: 10px 0;
+                padding: 10px 10px 10px 30px;
                 line-height: 22px;
                 font-size: 0.875em;
+                position: relative;
                 &:before {
                     content: url(../img/list-image.png);
-                    display: inline-block;
-                    padding-right: 15px;
+                    position: absolute;
+                    left: 0;
+                    top: 13px;
+                    display: block;
                 }
             }
         }

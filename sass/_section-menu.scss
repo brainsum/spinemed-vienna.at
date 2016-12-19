@@ -1,38 +1,80 @@
 @import 'variables';
-
 .logo a {
-	@extend %logo;
-	margin-left: 25px;
-	margin-top: 25px;
+    @extend %logo;
+    margin: 15px 0 15px 25px;
+    @include breakpoint(md) {
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+}
+
+.navbar-header {
+    float: right;
+    padding: 15px;
+    @include breakpoint(md) {
+        display: none;
+    }
+    span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: $blue-bg;
+        margin: 5px auto;
+        content: "";
+        border-radius: 1px;
+    }
 }
 
 .top-menu {
-	height: 70px;
-	float: right;
-	margin-right: 25px;
-	.top-menu-item {
-		float: left;
-		padding: 0 25px;
-        transition: background-color 0.25s;
-		a {
-			@include UbuntuBold;
-			text-transform: uppercase;
-			line-height: 70px;
-			font-size: $font13px;
-            transition: color 0.25s;
-		}
-        &.is-active{
-            background-color: $blue;
+    transition: height 0s;
+    transition: opacity 0.5s;
+    height: 0;
+    opacity: 0;
+    li{
+        display: none;
+    }
+    &.menu-active {
+        opacity: 1;
+        height: inherit;
+        clear: both;
+        border: 1px solid $blue-bg;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        li {
+            display: block;
+            text-align: center;
             a{
-                color: white;
+                padding: 10px;
+                display: block;
             }
-
+            &.is-active a {
+                background-color: rgba($blue-bg, 0.3);
+            }
         }
-	}
+    }
+    @include breakpoint(md) {
+        opacity: 1;
+        height: 70px;
+        float: right;
+        margin-right: 25px;
+        .top-menu-item {
+            display: inherit;
+            float: left;
+            padding: 0 25px;
+            transition: background-color 0.25s;
+            a {
+                @include UbuntuBold;
+                text-transform: uppercase;
+                line-height: 70px;
+                font-size: $font13px;
+                transition: color 0.25s;
+            }
+            &.is-active {
+                background-color: $blue;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
 }
-
-
-
-
-
-

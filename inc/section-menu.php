@@ -5,6 +5,11 @@
 				<div class="logo pull-left">
 					<a href="/">SpineMED<span>Vienna</span></a>
 				</div>
+                <div class="navbar-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 				<nav>
 					<ul class="top-menu">
 						<li class="top-menu-item">

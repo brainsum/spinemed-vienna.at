@@ -1,61 +1,72 @@
 @import 'variables';
-
-footer { 
-	content: "TEST"; 
-	padding-top: 65px;
-	padding-bottom: 80px;
-	background-color: $darkest-blue;
-	color: $white;
-
-	.footer-logo {
-		@extend %logo;
-		color: $white;
-		font-size: 25.95px;
-		margin-bottom: 12px;
-
-		span {
-			color: $white;
-			font-size: 24.77px;
-		}
-	}
-    a.pull-left:hover{
+footer {
+    padding-top: 65px;
+    padding-bottom: 20px;
+    background-color: $darkest-blue;
+    color: $white;
+    text-align: center;
+    @include breakpoint(sm) {
+        text-align: left;
+        padding-bottom: 80px;
+        .footer-logo {
+            p,a {
+                float: left;
+                display: inline-block;
+            }
+            a{
+                padding-left: 3px;
+            }
+        }
+    }
+    .footer-logo {
+        @extend %logo;
+        color: $white;
+        font-size: 25.95px;
+        margin-bottom: 12px;
+        span {
+            color: $white;
+            font-size: 24.77px;
+        }
+    }
+    a.pull-left:hover {
         color: white;
         text-decoration: underline;
     }
-	p,
-	a {
-		color: $white;
-		font-size: $font13px;
-	}
-
-	.footer-menu {
-		margin-top: 20px;
-		float: right;
-	}
-
-	.footer-menu-item {
-		float: left;
-		margin-left: 45px;
-
-		a {
-			@include UbuntuBold;
-			color: $blue;
-			text-transform: uppercase;
-            transition: color 0.25s;
-            &:hover{
+    p,
+    a {
+        color: $white;
+        font-size: $font13px;
+    }
+    .footer-menu {
+        margin-top: 20px;
+        .footer-menu-item {
+            text-align: center;
+            a {
+                @include UbuntuBold;
+                color: $blue;
+                text-transform: uppercase;
+                transition: color 0.25s;
+                padding: 15px;
+                display: block;
+                &:hover {
+                    color: white;
+                }
+            }
+            &.is-active a {
                 color: white;
             }
-		}
-        &.is-active a{
-            color: white;
         }
-	}
+        @include breakpoint(sm) {
+            float: right;
+            .footer-menu-item {
+                text-align: left;
+                float: left;
+                margin-left: 45px;
+                a {
+                    padding: 3px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-

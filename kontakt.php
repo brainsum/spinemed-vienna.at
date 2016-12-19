@@ -19,6 +19,7 @@ include('inc/section-informationline.php');
 //include('inc/section-anwendung.php');
 
 include('inc/section-contact.php');
+include('inc/section-contact-links.php');
 
 /* FOOTER SECTION
 *****************/

@@ -9,15 +9,24 @@
         @include border-bottom-radius(4px);
         @include border-top-radius(4px);
         @include transition(backgound-color, .3s);
-        height: 150px;
+        height: 100px;
         width: 100%;
-        padding-top: 45px;
-        padding-left: 30px;
+        padding-top: 20px;
+        padding-left: 5px;
         background-color: $blue;
         color: $white;
+        margin: 2px 0;
         .icon-holder {
             float: left;
-            margin-right: 25px;
+            margin-right: 10px;
+        }
+        @include breakpoint(sm) {
+            height: 150px;
+            padding-top: 45px;
+            padding-left: 30px;
+            .icon-holder {
+                margin-right: 25px;
+            }
         }
         &:hover {
             background-color: darken($blue, 5%);

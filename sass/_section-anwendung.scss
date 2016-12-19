@@ -2,10 +2,15 @@
 
 .anwendung-holder {
 	padding-top: 50px;
+    padding-bottom: 30px;
+    @include breakpoint(sm){
+        padding-bottom: 0;
+    }
 	background-color: $light-grey;
 	.img-holder img {
 		border: 8px solid $white;
 		margin-bottom: 50px;
+        max-width: 100%;
 	}
 
 	h2 {

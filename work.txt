@@ -1,8 +1,0 @@
-45' - project alap dolgok (git,gulp,basecamp,devsero)
-
-2016-12-17 17:45 - 
-dev:
-- contact button animation (js)
-- menu active clas (js)
-- top, bottom menu scss
-- aloldalak

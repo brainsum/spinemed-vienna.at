@@ -48,3 +48,20 @@ $(function () {
     setNavigation();
 });
 
+//hamburger menu
+$(function () {
+    if($(window).width() < 992){
+        $('.navbar-header').on('click touchstart', function (e) {
+            $('ul.top-menu').toggleClass('menu-active');
+            e.preventDefault();
+        });
+    }
+    $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+            $('ul.top-menu').removeClass('menu-active');
+        }
+    }).resize();
+});
+
+
+

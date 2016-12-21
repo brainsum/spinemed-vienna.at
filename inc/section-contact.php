@@ -26,11 +26,11 @@
 				<div class="title">Kontaktieren Sie uns - <br>
 					wir beantworten Ihre Fragen!</div>
 
-				<form>
-					<input type="text" name="name" id="name" placeholder="Name">
-					<input type="text" name="email" id="email" placeholder="E-mail">
-					<input type="text" name="betreff" id="betreff" placeholder="Betreff">
-					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht"></textarea>
+				<form action="email.php" method="post">
+					<input type="text" name="name" id="name" placeholder="Name" value="" required>
+					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
+					<input type="text" name="betreff" id="betreff" placeholder="Betreff" value="" required>
+					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
 					<button>Send nachricht</button>
 				</form>
 			</div>

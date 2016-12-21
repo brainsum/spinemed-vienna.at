@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /* PAGE HEAD
 ************/
@@ -12,6 +13,14 @@ echo "<main>";
 
 /* MAIN SECTIONS
 ****************/
+
+if(isset($_SESSION['MSG']))
+{
+    echo '<h2 style="text-align: center; margin: 20px 0;">';
+    echo $_SESSION['MSG'];
+    echo '</h2>';
+    session_destroy();
+}
 
 include('inc/section-intro.php');
 include('inc/section-iconline.php');

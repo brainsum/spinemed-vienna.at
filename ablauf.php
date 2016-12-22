@@ -14,12 +14,6 @@ echo "<main>";
 ****************/
 
 include('inc/section-ablauf.php');
-//include('inc/section-intro.php');
-//include('inc/section-iconline.php');
-//include('inc/section-informationline.php');
-//include('inc/section-anwendung.php');
-
-//include('inc/section-contact.php');
 
 /* FOOTER SECTION
 *****************/

@@ -9,7 +9,7 @@ h1.sub-page-title {
 }
 
 h2.sub-page-title {
-    font-size: $font25px;
+    font-size: $font20px;
     color: $grey-txt;
     @include breakpoint(se){
         font-size: $font30px;
@@ -137,4 +137,8 @@ a.blue-button {
     @include breakpoint(sm) {
         padding: 15px 90px;
     }
+}
+
+.section-impressum-holder p a{
+    color: $blue;
 }

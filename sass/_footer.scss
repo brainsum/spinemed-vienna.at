@@ -8,13 +8,16 @@ footer {
     @include breakpoint(sm) {
         text-align: left;
         padding-bottom: 80px;
-        .footer-logo {
-            p,a {
-                float: left;
-                display: inline-block;
-            }
-            a{
-                padding-left: 3px;
+        p,
+        a {
+            float: left;
+            display: inline-block;
+        }
+        a {
+            padding-left: 3px;
+            &:hover {
+                text-decoration: underline;
+                color: white;
             }
         }
     }

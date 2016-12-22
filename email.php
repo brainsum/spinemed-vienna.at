@@ -33,6 +33,4 @@ $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 header("Location: http://$host$uri");
 exit();
 
-
-
 ?>

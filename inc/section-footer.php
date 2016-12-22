@@ -18,9 +18,6 @@
 						<a href="/ergebnisse.php">ergebnisse</a>
                     </li>
                     <li class="footer-menu-item">
-				        <a href="/impressum.php">Impressum</a>
-				    </li>
-                    <li class="footer-menu-item">
 						<a href="/kontakt.php">kontakt</a>
 					</li>
 				</ul>

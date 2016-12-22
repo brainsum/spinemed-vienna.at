@@ -22,9 +22,6 @@
 							<a href="/ergebnisse.php">Ergebnisse</a>
                         </li>
                         <li class="top-menu-item">
-							<a href="/impressum.php">Impressum</a>
-						</li>
-                        <li class="top-menu-item">
 							<a href="/kontakt.php">Kontakt</a>
 						</li>
 					</ul>

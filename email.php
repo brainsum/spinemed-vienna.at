@@ -1,4 +1,5 @@
 <?php
+require_once('config.inc.php');
 session_start();
 
 if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) && isset($_POST["nachricht"])){
@@ -7,7 +8,7 @@ if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) &
     $mnachricht = (string)$_POST["nachricht"];
     $mname = (string)$_POST["name"];
 
-    $to = 'spinemed.vienna@gmail.com';
+    $to = SITE_MAIL;
     $subject = "Sie haben eine Nachricht von der Webseite SpineMED bekommen.";
     // Get HTML contents from file
     $htmlContent = "Sehr geehrter Administrator,<br><br>Sie haben eine Nachricht von der Webseite SpineMED bekommen, mit den folgenden Daten: <br><br><b>Name:</b><br> $mname<br><b>E-mail:</b><br><a href='mailto:$memail'>$memail</a><br><br><b>Betreff:</b><br> $mbetreff<br><br><b>Nachricht:</b><br> $mnachricht<br><br>© 2016 SpineMED Vienna";
@@ -17,7 +18,7 @@ if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) &
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
     // Additional headers
-    $headers .= 'From: SpineMED<spinemed.vienna@gmail.com>' . "\r\n";
+    $headers .= 'From: SpineMED' . SITE_MAIL . "\r\n";
 
     // Send email
     if(mail($to,$subject,$htmlContent,$headers)):

@@ -2,10 +2,10 @@
 session_start();
 
 if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) && isset($_POST["nachricht"])){
-    $memail = $_POST["email"];
-    $mbetreff = $_POST["betreff"];
-    $mnachricht = $_POST["nachricht"];
-    $mname = $_POST["name"];
+    $memail = (string)$_POST["email"];
+    $mbetreff = (string)$_POST["betreff"];
+    $mnachricht = (string)$_POST["nachricht"];
+    $mname = (string)$_POST["name"];
 
     $to = 'spinemed.vienna@gmail.com';
     $subject = "Sie haben eine Nachricht von der Webseite SpineMED bekommen.";

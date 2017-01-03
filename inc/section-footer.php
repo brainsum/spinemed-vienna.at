@@ -9,7 +9,7 @@
 			<div class="col-xs-12 col-md-8">
 				<ul class="footer-menu">
 					<li class="footer-menu-item">
-						<a href="/funktionsweise.php">funktionweise</a>
+						<a href="/funktionsweise.php">funktionsweise</a>
 					</li>
 					<li class="footer-menu-item">
 						<a href="/ablauf.php">ablauf</a>

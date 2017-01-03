@@ -52,8 +52,8 @@
         <div class="col-xs-12 col-md-4">
             <a href="/funktionsweise.php">
                 <div class="big-btn darken">
-                    <div class="icon-holder"><img src="img/icon-therapy-action.png" alt="SpineMED | FunktionsWeise"></div>
-                    <h3>FunktionsWeise</h3>
+                    <div class="icon-holder"><img src="img/icon-therapy-action.png" alt="SpineMED | Funktionsweise"></div>
+                    <h3>Funktionsweise</h3>
                     <p>Information zur
                         <br>Wirkungsweise der Therapie ></p>
                 </div>

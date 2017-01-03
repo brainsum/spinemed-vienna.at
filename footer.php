@@ -1,5 +1,3 @@
-
-
 <?php
     echo "</main>";
     include('inc/section-footer.php');
@@ -14,4 +12,3 @@
 
 </body>
 </html>
-

@@ -6,13 +6,13 @@
             </div>
         </div>
         <div class="col-xs-12">
-            <p>Die SpineM ED® Therapie ist die modernste und innovativste nicht-operative (konservative) Behandlungsmethode für Bandscheibenerkrankungen sowie Rückenschmerzen. In den USA ist sie bereits weit verbreitet und fachlich seit Jahren akzeptiert. Sie können auch in Wien mit dieser neuen Therapie erfolgreich behandelt werden.<br>Die Folgen von Wirbelsäulenbeschwerden sind oft quälende Schmerzen sowie ein Verlust an Aktivität und Lebensqualität. Nicht selten führt dies zu Beeinträchtigungen im privaten und beruflichen Umfeld.<br>Das moderne, innovative, und äußerst effektive Verfahren der spinalen Dekompression bietet neue Möglichkeiten im Bereich der konservativen Behandlung und stellt eine echte Alternative zur Bandscheiben Operation dar. </p>
+            <p>Die SpineMED® Therapie ist die modernste und innovativste nicht-operative (konservative) Behandlungsmethode für Bandscheibenerkrankungen sowie Rückenschmerzen. In den USA ist sie bereits weit verbreitet und fachlich seit Jahren akzeptiert. Sie können auch in Wien mit dieser neuen Therapie erfolgreich behandelt werden.<br>Die Folgen von Wirbelsäulenbeschwerden sind oft quälende Schmerzen sowie ein Verlust an Aktivität und Lebensqualität. Nicht selten führt dies zu Beeinträchtigungen im privaten und beruflichen Umfeld.<br>Das moderne, innovative, und äußerst effektive Verfahren der spinalen Dekompression bietet neue Möglichkeiten im Bereich der konservativen Behandlung und stellt eine echte Alternative zur Bandscheiben Operation dar. </p>
         </div>
     </div>
         <div class="img-holder"> <img src="img/img-funktionsweise.png" alt="Gunktionsweise"> </div>
     <div class="container container-subpage">
         <div class="col-xs-12">
-            <h2 class="sub-page-title">Wirkungsweise der therapie</h2>
+            <h2 class="sub-page-title">Wirkungsweise der Therapie</h2>
         </div>
         <div class="col-xs-12">
             <p>Beschädigte sowie verletzte Bandscheiben heilen nur sehr langsam, da sie einer ständigen Druckbelastung ausgesetzt sind. Die spinale Dekompression ist ein Verfahren, bei dem der Druck innerhalb der Bandscheibe verringert wird, dadurch wird das Eindringen von Flüssigkeit, Nährstoffen und Sauerstoff aus der Umgebung unterstützt und der Bandscheibe die Möglichkeit gegeben, sich zu rehydrieren (Flüssigkeit aufzunehmen), zu regenerieren, und sich so in ihre ursprüngliche Position zurückzuziehen (Repositionierung).</p>

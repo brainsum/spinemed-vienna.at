@@ -5,7 +5,7 @@
             <a href="/funktionsweise.php">
                 <div class="big-btn darken">
                     <div class="icon-holder"><img src="img/icon-therapy-action.png" alt="SpineMED | FunktionsWeise"></div>
-                    <h3>FunktionsWeise</h3>
+                    <h3>Funktionsweise</h3>
                     <p>Information zur
                         <br>Wirkungsweise der Therapie ></p>
                 </div>

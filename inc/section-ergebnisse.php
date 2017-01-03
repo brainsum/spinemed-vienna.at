@@ -7,11 +7,6 @@
         <div class="col-xs-12">
             <p>In den USA sind bereits mehrere Hundert SpineMED® Geräte im Einsatz und haben gute Erfolge gezeigt. Auch in Deutschland sind schon über 30 Geräte und beispielsweise in Südkorea über 80 im Einsatz. Viele Patienten sind heute absolut schmerzfrei.</p>
         </div>
-        <div>
-            <div class="col-xs-12 col-md-4"><a class="blue-button" href="http://www.backpainswfl.com/?f">Zu den Ergebnissen</a></div>
-            <div class="col-xs-12 col-md-4"><a class="blue-button" href="http://www.spinecare.ws/">Zu den Studien</a></div>
-            <div class="col-xs-12 col-md-4"><a class="blue-button" href="http://www.spine-med.de/home/">www.spinemed.de</a></div>
-        </div>
         <div class="col-xs-12">
             <p>Die folgenden MRT Bilder stammen von einem Patienten mit Bandscheibenvorfall L5/S1. Der Patient ist vorher mehrere Monate arbeitsunfähig gewesen und wurde mit diversen konventionellen Verfahren erfolglos behandelt. Als nächster Schritt wäre eine OP angestanden, die mit der SpineMED® Therapie verhindert werden konnte. Sollten Sie Fragen haben, zögern Sie nicht uns zu kontaktieren, wir bemühen uns um einen Zeitnahen Termin für Sie, und beantworten alle Fragen gerne.</p>
         </div>
@@ -35,8 +30,8 @@
         <div class="col-xs-12 col-md-4">
             <a href="/funktionsweise.php">
                 <div class="big-btn darken">
-                    <div class="icon-holder"><img src="img/icon-therapy-action.png" alt="SpineMED | FunktionsWeise"></div>
-                    <h3>FunktionsWeise</h3>
+                    <div class="icon-holder"><img src="img/icon-therapy-action.png" alt="SpineMED | Funktionsweise"></div>
+                    <h3>Funktionsweise</h3>
                     <p>Information zur
                         <br>Wirkungsweise der Therapie ></p>
                 </div>

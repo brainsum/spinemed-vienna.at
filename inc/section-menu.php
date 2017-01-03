@@ -13,7 +13,7 @@
 				<nav>
 					<ul class="top-menu">
 						<li class="top-menu-item">
-							<a href="/funktionsweise.php">Funktionwseise</a>
+							<a href="/funktionsweise.php">Funktionsweise</a>
 						</li>
 						<li class="top-menu-item">
 							<a href="/ablauf.php">Ablauf</a>

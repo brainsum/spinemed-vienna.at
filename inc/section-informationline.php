@@ -8,7 +8,7 @@
 		</div>
 		<div class="col-xs-12 col-md-6 col-lg-3 col-lg-offset-3 phone-holder">
 			<img src="img/icon-phone.png" alt="SpineMED | Telefonikon" class="icon-phone">
-            <a href="tel: 01997420"><h2>01-997 4207</h2></a>
+            <a href="tel: 019974207"><h2>01-997 4207</h2></a>
 		</div>
 		<div class="col-xs-12 col-md-6 col-lg-3">
 			<a href="#contact-form" class="contact-btn">Kontakt</a>

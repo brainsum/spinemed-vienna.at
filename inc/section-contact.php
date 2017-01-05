@@ -31,7 +31,7 @@
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Betreff" value="" required>
 					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-					<button>Send nachricht</button>
+					<button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Send nachricht</button>
 				</form>
 			</div>
 		</div>

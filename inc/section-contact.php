@@ -14,11 +14,11 @@
 					Web: <a href="http://www.healthpi.at" target="_blank" lang="de">www.healthpi.at</a>
 				</p>
 				<ul class="social-icons clearfix">
-					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/spinemedvienna" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://plus.google.com/117706557119252024580" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="https://at.linkedin.com/in/spinemed-vienna-30a36883" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/spinemed.vienna?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/user/spinemedvienna" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 
@@ -31,7 +31,7 @@
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Betreff" value="" required>
 					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-					<button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Send nachricht</button>
+					<button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Nachricht senden</button>
 				</form>
 			</div>
 		</div>

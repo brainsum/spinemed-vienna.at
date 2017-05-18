@@ -26,5 +26,6 @@
     ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
   </script>
+  <script src='https://www.google.com/recaptcha/api.js?hl=de-AT'></script>
 </head>
 <body>

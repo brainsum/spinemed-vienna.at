@@ -26,12 +26,13 @@
 				<div class="title">Kontaktieren Sie uns - <br>
 					wir beantworten Ihre Fragen!</div>
 
-				<form action="email.php" method="post">
+				<form action="email.php" method="post" id="contact-form-for-submit">
 					<input type="text" name="name" id="name" placeholder="Name" value="" required>
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Betreff" value="" required>
 					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-					<button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Nachricht senden</button>
+          <div class="g-recaptcha" data-sitekey="6LcnGSEUAAAAAIGi29_8jxPUP_PvnOVSeGrjGUCM"></div>
+          <button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Nachricht senden</button>
 				</form>
 			</div>
 		</div>

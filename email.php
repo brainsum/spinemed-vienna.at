@@ -1,31 +1,48 @@
 <?php
 require_once('config.inc.php');
+require_once 'recaptchalib.php';
 session_start();
 
 if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) && isset($_POST["nachricht"])){
-    $memail = (string)$_POST["email"];
-    $mbetreff = (string)$_POST["betreff"];
-    $mnachricht = (string)$_POST["nachricht"];
-    $mname = (string)$_POST["name"];
+    $reCaptcha = new ReCaptcha("6LcnGSEUAAAAAG50N4cl7MZzwL7aDBCHzJFT8vF8");
+    if ($_POST["g-recaptcha-response"]) {
+        $response = $reCaptcha->verifyResponse(
+            $_SERVER["REMOTE_ADDR"],
+            $_POST["g-recaptcha-response"]
+        );
 
-    $to = SITE_MAIL;
-    $subject = "Sie haben eine Nachricht von der Webseite SpineMED bekommen.";
-    // Get HTML contents from file
-    $htmlContent = "Sehr geehrter Administrator,<br><br>Sie haben eine Nachricht von der Webseite SpineMED bekommen, mit den folgenden Daten: <br><br><b>Name:</b><br> $mname<br><b>E-mail:</b><br><a href='mailto:$memail'>$memail</a><br><br><b>Betreff:</b><br> $mbetreff<br><br><b>Nachricht:</b><br> $mnachricht<br><br>© 2016 SpineMED Vienna";
+        if ($response != null && $response->success) {
+            $memail = (string) $_POST["email"];
+            $mbetreff = (string) $_POST["betreff"];
+            $mnachricht = (string) $_POST["nachricht"];
+            $mname = (string) $_POST["name"];
 
-    // Set content-type for sending HTML email
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            $to = SITE_MAIL;
+            $subject = "Sie haben eine Nachricht von der Webseite SpineMED bekommen.";
+            // Get HTML contents from file
+            $htmlContent = "Sehr geehrter Administrator,<br><br>Sie haben eine Nachricht von der Webseite SpineMED bekommen, mit den folgenden Daten: <br><br><b>Name:</b><br> $mname<br><b>E-mail:</b><br><a href='mailto:$memail'>$memail</a><br><br><b>Betreff:</b><br> $mbetreff<br><br><b>Nachricht:</b><br> $mnachricht<br><br>© 2016 SpineMED Vienna";
 
-    // Additional headers
-    $headers .= 'From: SpineMED' . SITE_MAIL . "\r\n";
+            // Set content-type for sending HTML email
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-    // Send email
-    if(mail($to,$subject,$htmlContent,$headers)):
-        $_SESSION['MSG'] = 'Vielen Dank für Ihre Anfrage, bald werden wir auf Ihre E-Mail antworten.';
-    else:
-        $_SESSION['MSG'] = 'Leider, ist ein Fehler aufgetreten, bitte wiederholen Sie den Vorgang. Danke!';
-    endif;
+            // Additional headers
+            $headers .= 'From: SpineMED' . SITE_MAIL . "\r\n";
+
+            // Send email
+            if (mail($to, $subject, $htmlContent, $headers)):
+                $_SESSION['MSG'] = 'Vielen Dank für Ihre Anfrage, bald werden wir auf Ihre E-Mail antworten.';
+            else:
+                $_SESSION['MSG'] = 'Leider, ist ein Fehler aufgetreten, bitte wiederholen Sie den Vorgang. Danke!';
+            endif;
+        }
+        else {
+          $_SESSION['MSG'] = 'Ungültige recaptcha.';
+        }
+    }
+    else {
+      $_SESSION['MSG'] = 'Bitte überprüfen Sie recaptcha.';
+    }
 }
 
 $host = $_SERVER["HTTP_HOST"];

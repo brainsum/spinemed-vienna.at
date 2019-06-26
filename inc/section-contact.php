@@ -31,7 +31,7 @@
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Telefonnummer (optional)" value="" required>
 					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-          <div class="g-recaptcha" data-sitekey="6LcnGSEUAAAAAIGi29_8jxPUP_PvnOVSeGrjGUCM"></div>
+          <div class="g-recaptcha" data-sitekey="6LcJvKoUAAAAAD7P7QgHqLNpY_lAqaTW6mfHKqKG"></div>
           <button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Nachricht senden</button>
 				</form>
 			</div>

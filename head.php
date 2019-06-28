@@ -6,7 +6,6 @@ if (((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && preg_match("/m
   exit;
 }
 if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'https') && preg_match("/spinemed-vienna.at$/", $_SERVER['HTTP_HOST'])) || $_SERVER['HTTP_HOST'] == 'spinemed-vienna.at') {
-  // var_dump($_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'https'); die('redirect');
   $location = 'https://' . 'www.spinemed-vienna.at' . $_SERVER['REQUEST_URI'];
   header('HTTP/1.1 301 Moved Permanently');
   header('Location: ' . $location);

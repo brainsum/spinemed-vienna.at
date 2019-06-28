@@ -1,18 +1,6 @@
 <?php
 session_start();
 
-if (((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && preg_match("/med-rent.de$/", $_SERVER['HTTP_HOST'])) || $_SERVER['HTTP_HOST'] == 'med-rent.de') {
-  $location = 'https://' . 'www.med-rent.de' . $_SERVER['REQUEST_URI'];
-  header('HTTP/1.1 301 Moved Permanently');
-  header('Location: ' . $location);
-  exit;
-}
-if (((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && preg_match("/spinemed-vienna.at/$/", $_SERVER['HTTP_HOST'])) || $_SERVER['HTTP_HOST'] == 'spinemed-vienna.at') {
-  $location = 'https://' . 'www.spinemed-vienna.at' . $_SERVER['REQUEST_URI'];
-  header('HTTP/1.1 301 Moved Permanently');
-  header('Location: ' . $location);
-  exit;
-}
 /* PAGE HEAD
 ************/
 include('head.php');

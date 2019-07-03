@@ -1,115 +1,82 @@
-'use strict';
+const browserSync   = require('browser-sync').create();
+const gulp          = require('gulp');
+const autoprefixer  = require('autoprefixer');
+const purge         = require('gulp-css-purge');
+const postcss       = require('gulp-postcss');
+const sass          = require('gulp-sass');
+const sourcemaps    = require('gulp-sourcemaps');
 
-var config			= require('./config.js');
-var path 			= require('path');
-var upath 			= require('upath');
-var colors			= require('colors');
-var extend			= require('extend');
-var browserSync		= require('browser-sync');
-var gulp 			= require('gulp');
-var sass 			= require('gulp-sass');
-var sourcemaps 		= require('gulp-sourcemaps');
-var autoprefixer 	= require('gulp-autoprefixer');
-var sassGlob 		= require('gulp-sass-glob');
-var reload      	= browserSync.reload;
+// Store all paths
+const paths = {
+    sass: './sass/**/*.scss',
+    css: './css/'
+};
 
-//var themePath = config.theme + '';
-var themePath = 'E:/webserver/spinemed/css/'
-var external = config.external;
-var sassCfg = config.sass;
-var autoprefixerCfg = config.autoprefixer;
-var bsCfg = config.browserSync;
-console.log(themePath)
-// helper function for pretty priting copied files
-function copyLog(src, dest) {
-	console.log('[' + colors.gray(new Date().toLocaleTimeString()) + ']' + ' Copied: ' + colors.yellow(path.basename(src)) + ' to ' + colors.green(dest));
+/**
+ * SASS:Development Task
+ *
+ * Sass task for development with live injecting into all browsers
+ * @return {object} Autoprefixed CSS files with expanded style and sourcemaps.
+ */
+function sassDevTask() {
+    return gulp
+        .src(paths.sass)
+        .pipe(sourcemaps.init({ largeFile: true }))
+        .pipe(sass({ outputStyle: 'expanded', precision: 10 }))
+        .on('error', sass.logError)
+        .pipe(postcss([autoprefixer()]))
+        .pipe(sourcemaps.write({ includeContent: false }))
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(paths.css))
+        .pipe(browserSync.stream());
 }
 
-// find destination folder for the requested file
-function findDest(vf, p) {
-	var found = false;
-	var dest = '';
-
-	for (var i = 0, len = p.length; i < len; i++) {
-		if (upath.normalize(vf.path).indexOf(p[i]) !== -1) {
-			dest = external.dest[i];
-			found = true;
-			break ;
-		}
-	}
-
-	return dest;
+/**
+ * SASS:Production Task
+ *
+ * Sass task for production with linting, to be stored in Git (run before
+ * commit)
+ * @return {object} Autoprefixed, minified, ordered and linted* CSS files without
+ * sourcemaps.
+ */
+function sassProdTask() {
+    return gulp
+        .src(paths.sass)
+        .pipe(sass({ outputStyle: 'compact', precision: 10 }))
+        .on('error', sass.logError)
+        .pipe(postcss([autoprefixer()]))
+        .pipe(
+            purge({
+                trim: true,
+                shorten: true,
+                verbose: true,
+            }),
+        )
+        .pipe(gulp.dest(paths.css));
 }
 
-// copy any additional files required by theme
-gulp.task('cp', function() {
-	if (external === undefined) return ;
-	if (external.src === undefined && !(external.src instanceof Array) && 
-		external.dest === undefined && !(external.dest instanceof Array)) return ;
-	if (external.src.length !== external.dest.length) return ;
+/**
+ * BrowserSync Task
+ *
+ * Watching Sass and JavaScript source files for changes.
+ * @prop {string} proxy Change it for your local setup.
+ * @param {function} done Changed event.
+ */
+function browserSyncTask(done) {
+    browserSync.init({
+        proxy: 'spinemed.test',
+        open: false,
+        browser: [
+            'Google Chrome',
+        ],
+    });
+    gulp.watch(paths.sass, sassDevTask);
+    done();
+}
 
-	var cleanPaths = [],
-		src = external.src;
-	
-	for (var i = 0, len = src.length; i < len; i++) {
-		cleanPaths.push(path.dirname(src[i]))
-	}
-
-	return gulp.src(external.src)
-		.pipe(gulp.dest(function (vf) {
-			var dest = findDest(vf, cleanPaths)
-			copyLog(vf.path, dest);
-			return dest;
-		}));
-});
-
-// run browser sync and watch for changes
-gulp.task('serve', ['cp', 'sass:dev'], function() {
-	var bsConfig = extend(true, {}, bsCfg, { 
-		files: [ sassCfg.dest ],
-		rewriteRules: [{
-			match: new RegExp(themePath, 'g'),
-			fn: function (match) {
-				var path = sassCfg.dest,
-					startsWith = sassCfg.dest.substr(0, 1);
-
-				if (startsWith === '.') {
-					path =  sassCfg.dest.slice(1);
-				}
-				else if (startsWith !== '/') {
-					path = '/' + sassCfg.dest;
-				}
-
-				return path;
-			}
-		}] 
-	});
-	browserSync(bsConfig);
-
-	if (sassCfg.enable)
-    	gulp.watch(sassCfg.src, ['sass:dev']);
-});
-
-// task for building production version css
-// * autoprefixer
-gulp.task('sass:prod', function () {
-  gulp.src(sassCfg.src)
-  	.pipe(sassGlob())
-    .pipe(sass(sassCfg.compilerOptions).on('error', sass.logError))
-    .pipe(autoprefixer(autoprefixerCfg))
-    .pipe(gulp.dest(sassCfg.dest));
-});
-
-// task for building development version css
-gulp.task('sass:dev', function() {
-    return gulp.src(sassCfg.src)
-		.pipe(sourcemaps.init())
-		.pipe(sassGlob())
-        .pipe(sass().on('error', sass.logError))
-		.pipe(sourcemaps.write())
-        .pipe(gulp.dest(sassCfg.dest))
-        .pipe(reload({ stream: true }));
-});
-
-// default gulp task
-gulp.task('default', ['serve']);
+// export tasks
+exports.default = gulp.series(sassDevTask, browserSyncTask);
+exports.prod = sassProdTask;
+exports.sassDev = sassDevTask;
+exports.sassProd = sassProdTask;

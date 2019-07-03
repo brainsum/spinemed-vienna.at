@@ -87,7 +87,7 @@
     textarea#nachricht {
         width: 100%;
     }
-    button {
+    .contact-submit {
         @include UbuntuBold;
         @include border-bottom-radius(4px);
         @include border-top-radius(4px);

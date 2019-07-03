@@ -1,3 +1,7 @@
+<?php
+require_once('config.inc.php');
+?>
+
 <section class="contact-holder">
 
 	<div class="container">
@@ -26,13 +30,13 @@
 				<div class="title">Kontaktieren Sie uns - <br>
 					wir beantworten Ihre Fragen!</div>
 
-				<form action="email.php" method="post" id="contact-form-for-submit">
+				<form action="email.php" method="post" id="contact-form-for-submit" onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">
 					<input type="text" name="name" id="name" placeholder="Name" value="" required>
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Telefonnummer (optional)" value="" required>
 					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-          <div class="g-recaptcha" data-sitekey="6LcJvKoUAAAAAD7P7QgHqLNpY_lAqaTW6mfHKqKG"></div>
-          <button onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">Nachricht senden</button>
+                    <div class="g-recaptcha" data-sitekey="<?php echo(RECAPTCHA_SITE); ?>"></div>
+                    <input type="submit" class="contact-submit" value="Nachricht senden" title="Nachricht senden">
 				</form>
 			</div>
 		</div>

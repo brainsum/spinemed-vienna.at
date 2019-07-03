@@ -4,7 +4,7 @@ require_once 'recaptchalib.php';
 session_start();
 
 if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["betreff"]) && isset($_POST["nachricht"])){
-    $reCaptcha = new ReCaptcha("6LcJvKoUAAAAABIgMVmO2AM-nZ0uboqe9A6ivWq2");
+    $reCaptcha = new ReCaptcha(RECAPTCHA_SECRET);
     if ($_POST["g-recaptcha-response"]) {
         $response = $reCaptcha->verifyResponse(
             $_SERVER["REMOTE_ADDR"],

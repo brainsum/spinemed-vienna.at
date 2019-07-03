@@ -77,6 +77,6 @@ function browserSyncTask(done) {
 
 // export tasks
 exports.default = gulp.series(sassDevTask, browserSyncTask);
-exports.prod = sassProdTask;
+exports.prod = sassProdTask; // NOT run it until not solve minify caused css issues!
 exports.sassDev = sassDevTask;
-exports.sassProd = sassProdTask;
+exports.sassProd = sassProdTask; // NOT run it until not solve minify caused css issues!

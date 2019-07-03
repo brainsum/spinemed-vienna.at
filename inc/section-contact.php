@@ -30,7 +30,7 @@ require_once('config.inc.php');
 				<div class="title">Kontaktieren Sie uns - <br>
 					wir beantworten Ihre Fragen!</div>
 
-				<form action="email.php" method="post" id="contact-form-for-submit" onclick="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">
+				<form action="email.php" method="post" id="contact-form-for-submit" onsubmit="ga('send', 'event', 'Contact Form Events', 'Click', 'CTA');">
 					<input type="text" name="name" id="name" placeholder="Name" value="" required>
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Telefonnummer (optional)" value="" required>

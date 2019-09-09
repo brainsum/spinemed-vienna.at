@@ -1,7 +1,7 @@
 const browserSync   = require('browser-sync').create();
 const gulp          = require('gulp');
 const autoprefixer  = require('autoprefixer');
-const purge         = require('gulp-css-purge');
+const cleanCSS      = require('gulp-clean-css');
 const postcss       = require('gulp-postcss');
 const sass          = require('gulp-sass');
 const sourcemaps    = require('gulp-sourcemaps');
@@ -46,13 +46,21 @@ function sassProdTask() {
         .pipe(sass({ outputStyle: 'compact', precision: 10 }))
         .on('error', sass.logError)
         .pipe(postcss([autoprefixer()]))
-        .pipe(
-            purge({
-                trim: true,
-                shorten: true,
-                verbose: true,
-            }),
-        )
+        .pipe(cleanCSS({
+            compatibility: {
+                colors: {
+                    opacity: true
+                },
+                units: {
+                    rem: true,
+                    vh: true,
+                    vm: true,
+                    vmax: true,
+                    vmin: true
+                }
+            },
+            level: 2
+        }))
         .pipe(gulp.dest(paths.css));
 }
 

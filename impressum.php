@@ -1,4 +1,5 @@
 <?php
+$title = "Impressum | Rückenbehandlung | Rückenprobleme | SpineMED Vienna";
 
 /* PAGE HEAD
 ************/

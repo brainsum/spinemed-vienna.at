@@ -1,4 +1,5 @@
 <?php
+$title = "Funktionsweise | Spinalstenose Therapie | Dekompression | SpineMED Vienna";
 
 /* PAGE HEAD
 ************/

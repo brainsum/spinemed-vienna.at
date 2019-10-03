@@ -1,4 +1,5 @@
 <?php
+$title = "Ergebnisse von Rückenschmerzen nach Therapie durch das SpineMED Verfahren";
 
 /* PAGE HEAD
 ************/

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title = "Bandscheibenvorfall symptome | HWS | L5 S1 | Diskusprolaps | SpineMED Vienna";
 
 /* PAGE HEAD
 ************/

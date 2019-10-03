@@ -1,4 +1,5 @@
 <?php
+$title = "Behandlungsablauf der SpineMED | Rückenbeschwerden | HealthPi | Vienna";
 
 /* PAGE HEAD
 ************/

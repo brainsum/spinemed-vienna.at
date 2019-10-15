@@ -27,7 +27,17 @@
 	<meta name="Distribution" content="Global">
 	<meta name="Robots" content="INDEX,FOLLOW">
 	<meta name="Revisit-after" content="1 Week">
-	<link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#3fa3bf">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Spinemed">
+    <meta name="application-name" content="Spinemed">
+    <meta name="msapplication-TileColor" content="#3fa3bf">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/screen.css" rel="stylesheet">

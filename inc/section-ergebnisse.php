@@ -13,14 +13,14 @@
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <h3>Vor Spinemed</h3>
-                <div class="col-xs-12 img-holder"> <img src="img/Vor1.png" alt="Vor Spinemed 1"> </div>
-                <div class="col-xs-12 img-holder"> <img src="img/Vor-2.png" alt="Vor Spinemed 2"> </div>
+                <div class="col-xs-12 img-holder"> <img src="img/vor-spinemed-therapie-diskusprolaps-l5-s1.png" alt="Vor SpineMED Therapie | Diskusprolaps L5/S1"> </div>
+                <div class="col-xs-12 img-holder"> <img src="img/vor-spinemed-therapie-diskusprolaps-l5-s1-2.png" alt="Vor SpineMED Therapie | Diskusprolaps L5/S1"> </div>
                 <div class="col-xs-12 ergebnisse-image-footer"><p>Patientin 1949, Diskusprolaps L5/S1 MRT 22.02.2011 (vor SpineMed®)</p></div>
             </div>
             <div class="col-xs-12 col-md-6">
                 <h3>Nach Spinemed</h3>
-                <div class="col-xs-12 img-holder"> <img src="img/Nach-1.png" alt="Nach Spinemed 1"> </div>
-                <div class="col-xs-12 img-holder"> <img src="img/Nach-2.png" alt="Nach Spinemed 2"> </div>
+                <div class="col-xs-12 img-holder"> <img src="img/nach-spinemed-therapie-diskusprolaps-l5-s1.png" alt="Nach SpineMED Therapie | Diskusprolaps L5/S1"> </div>
+                <div class="col-xs-12 img-holder"> <img src="img/nach-spinemed-therapie-diskusprolaps-l5-s1-2.png" alt="Nach SpineMED Therapie | Diskusprolaps L5/S1"> </div>
                 <div class="col-xs-12 ergebnisse-image-footer"><p>Nach 20 SpineMed® Sitzungen MRT 27.04.2011</p></div>
             </div>
         </div>

@@ -9,7 +9,7 @@
             <p>Die SpineMED® Therapie ist die modernste und innovativste nicht-operative (konservative) Behandlungsmethode für Bandscheibenerkrankungen sowie Rückenschmerzen. In den USA ist sie bereits weit verbreitet und fachlich seit Jahren akzeptiert. Sie können auch in Wien mit dieser neuen Therapie erfolgreich behandelt werden.<br>Die Folgen von Wirbelsäulenbeschwerden sind oft quälende Schmerzen sowie ein Verlust an Aktivität und Lebensqualität. Nicht selten führt dies zu Beeinträchtigungen im privaten und beruflichen Umfeld.<br>Das moderne, innovative, und äußerst effektive Verfahren der spinalen Dekompression bietet neue Möglichkeiten im Bereich der konservativen Behandlung und stellt eine echte Alternative zur Bandscheiben Operation dar. </p>
         </div>
     </div>
-        <div class="img-holder"> <img src="img/img-funktionsweise.png" alt="Gunktionsweise"> </div>
+        <div class="img-holder"> <img src="img/img-funktionsweise.png" alt="Funktionsweise | Spinalstenose Therapie | Dekompression | SpineMED Therapie"> </div>
     <div class="container container-subpage">
         <div class="col-xs-12">
             <h2 class="sub-page-title">Wirkungsweise der Therapie</h2>

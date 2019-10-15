@@ -17,9 +17,9 @@
             <p>Beschädigte sowie verletzte Bandscheiben heilen nur sehr langsam, da sie einer ständigen Druckbelastung ausgesetzt sind. Die spinale Dekompression ist ein Verfahren, bei dem der Druck innerhalb der Bandscheibe verringert wird, dadurch wird das Eindringen von Flüssigkeit, Nährstoffen und Sauerstoff aus der Umgebung unterstützt und der Bandscheibe die Möglichkeit gegeben, sich zu rehydrieren (Flüssigkeit aufzunehmen), zu regenerieren, und sich so in ihre ursprüngliche Position zurückzuziehen (Repositionierung).</p>
         </div>
         <div class="col-xs-12 image-text">
-            <div class="col-xs-12 col-sm-4"><p>Baschadigt</p><img src="img/img-spine-bad.png" alt="Baschadigt"></div>
-            <div class="col-xs-12 col-sm-4"><p>Normal</p><img src="img/img-spine-normal.png" alt="Normal"></div>
-            <div class="col-xs-12 col-sm-4"><p>Optimal</p><img src="img/img-spine-optimal.png" alt="Optimal"></div>
+            <div class="col-xs-12 col-sm-4"><p>Baschadigt</p><img src="img/img-spine-bad.png" alt="Beschädigt Bandscheiben | Behandlungsablauf der SpineMED | Rückenbeschwerden | HealthPi Therapie | Vienna"></div>
+            <div class="col-xs-12 col-sm-4"><p>Normal</p><img src="img/img-spine-normal.png" alt="Normal Bandscheiben | Behandlungsablauf der SpineMED | Rückenbeschwerden | HealthPi Therapie | Vienna"></div>
+            <div class="col-xs-12 col-sm-4"><p>Optimal</p><img src="img/img-spine-optimal.png" alt="Optimal Bandscheiben | Behandlungsablauf der SpineMED | Rückenbeschwerden | HealthPi Therapie | Vienna"></div>
         </div>
     </div>
      <div class="subpage-vertical-buttons-holder clearfix">

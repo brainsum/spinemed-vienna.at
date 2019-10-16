@@ -5,8 +5,9 @@
 	padding-top: 50px;
 	padding-bottom: 65px;
 
-	h3 {
+	p {
 		@include UbuntuMedium;
+		display: block;
 		font-size: $font18px;
 		text-transform: uppercase;
 		text-align: center;
@@ -24,13 +25,13 @@
 		@media (min-width: $screen-lg-min) {
 			text-align: start;
 		}
-		h2,
+		strong,
 		img {
 			display: inline-block;
 		}
 	}
 
-	h2 {
+	strong {
 		@include UbuntuMedium;
 		font-size: $font30px;
 		color: $light-blue;

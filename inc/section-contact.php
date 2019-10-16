@@ -3,7 +3,6 @@ require_once('config.inc.php');
 ?>
 
 <section class="contact-holder">
-
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-4">

@@ -5,11 +5,14 @@ const cleanCSS      = require('gulp-clean-css');
 const postcss       = require('gulp-postcss');
 const sass          = require('gulp-sass');
 const sourcemaps    = require('gulp-sourcemaps');
+const uglify        = require('gulp-uglify');
 
 // Store all paths
 const paths = {
     sass: './sass/**/*.scss',
-    css: './css/'
+    css: './css/',
+    jsSrc: './js/src/*.js',
+    jsDist: './js/dist/'
 };
 
 /**
@@ -65,6 +68,21 @@ function sassProdTask() {
 }
 
 /**
+ * JavaScript Task
+ *
+ * Currently there is only one JavaScript task (no separated for dev and prod).
+ * @return {object} Linted (auto fixable, warnings printed to console about
+ * others) and minified JavaScript files.
+ */
+function scriptsTask() {
+    return gulp
+        .src(paths.jsSrc)
+        .pipe(uglify())
+        .pipe(gulp.dest(paths.jsDist))
+        .pipe(browserSync.stream());
+}
+
+/**
  * BrowserSync Task
  *
  * Watching Sass and JavaScript source files for changes.
@@ -84,7 +102,8 @@ function browserSyncTask(done) {
 }
 
 // export tasks
-exports.default = gulp.series(sassDevTask, browserSyncTask);
+exports.default = gulp.series(sassDevTask, scriptsTask, browserSyncTask);
 exports.prod = sassProdTask; // NOT run it until not solve minify caused css issues!
 exports.sassDev = sassDevTask;
 exports.sassProd = sassProdTask; // NOT run it until not solve minify caused css issues!
+exports.scripts = scriptsTask;

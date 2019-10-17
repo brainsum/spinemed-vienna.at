@@ -41,8 +41,8 @@
 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/screen.css" rel="stylesheet">
-    <script src="js/cookieconsent.min.js"></script>
-    <script src="js/cookieconsent.config.js"></script>
+    <script src="js/dist/cookieconsent.min.js"></script>
+    <script src="js/dist/cookieconsent.config.js"></script>
 	<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

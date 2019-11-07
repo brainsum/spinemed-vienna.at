@@ -1,28 +1,29 @@
-<footer id="footer">
+<footer id="footer" class="site-footer">
 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-4 pull-left">
-				<div class="footer-logo">SpineMED<span>Vienna</span></div>
-				<p> © <?php echo date('Y'); ?> SpineMED Vienna | </p><a class="impressum" href="/impressum.php" >Impressum</a>
-			</div>
-			<div class="col-xs-12 col-md-8">
-				<ul class="footer-menu">
-					<li class="footer-menu-item">
-						<a href="/funktionsweise.php">funktionsweise</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="/ablauf.php">ablauf</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="/ergebnisse.php">ergebnisse</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 pull-left">
+                <div class="footer-logo">SpineMED<span>Vienna</span></div>
+                <p> © <?php echo date('Y'); ?> SpineMED Vienna | </p><a
+                        class="impressum" href="/impressum.php">Impressum</a>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <a href="/funktionsweise.php">funktionsweise</a>
                     </li>
                     <li class="footer-menu-item">
-						<a href="/kontakt.php">kontakt</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                        <a href="/ablauf.php">ablauf</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/ergebnisse.php">ergebnisse</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/kontakt.php">kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </footer>

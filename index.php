@@ -25,6 +25,8 @@ if(isset($_SESSION['MSG']))
 
 include('inc/section-intro.php');
 include('inc/section-iconline.php');
+include('inc/section-quotes.php');
+include('inc/section-doctor.php');
 include('inc/section-informationline.php');
 include('inc/section-anwendung.php');
 include('inc/section-vertical-buttons.php');

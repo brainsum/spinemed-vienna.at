@@ -12,7 +12,8 @@ const paths = {
     sass: './sass/**/*.scss',
     css: './css/',
     jsSrc: './js/src/*.js',
-    jsDist: './js/dist/'
+    jsDist: './js/dist/',
+    php: './**/*.php'
 };
 
 /**
@@ -83,6 +84,17 @@ function scriptsTask() {
 }
 
 /**
+ * PHP Task
+ *
+ * @return {object} Watched twig template files.
+ */
+function phpTask() {
+    return gulp
+        .src(paths.php)
+        .pipe(browserSync.stream());
+}
+
+/**
  * BrowserSync Task
  *
  * Watching Sass and JavaScript source files for changes.
@@ -98,6 +110,7 @@ function browserSyncTask(done) {
         ],
     });
     gulp.watch(paths.sass, sassDevTask);
+    gulp.watch(paths.php, phpTask);
     done();
 }
 

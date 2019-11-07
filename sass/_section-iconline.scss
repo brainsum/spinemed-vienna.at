@@ -1,37 +1,38 @@
 @import 'variables';
 
 .iconline-holder {
-	background-color: $blue;
-	padding-top: 40px;
-	padding-bottom: 15px;
-	color: $white;
+  background-color: $blue;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  color: $white;
 
-	h2 {
-		@include UbuntuMedium;
-		font-size: $font30px;
-		text-transform: uppercase;
-		text-align: center;
-		margin-bottom: 30px;
-	}
+  h2 {
+    @include UbuntuMedium;
+    font-size: $font30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-	.icon-holder {
-		text-align: center;
-		&.odd {
-			clear: both;
-			@media (min-width: $screen-sm-min) {
-				clear: none;
-			}
-		}
+  .icon-holder {
+    text-align: center;
 
-		p {
-			@include UbuntuBold;
-			@include line-height(14, 18);
-			font-size: $font14px;
-			text-transform: uppercase;
-			margin-top: 5px;
-			margin-bottom: 30px;
-		}
-	}
+    &.odd {
+      clear: both;
+      @media (min-width: $screen-sm-min) {
+        clear: none;
+      }
+    }
+
+    p {
+      @include UbuntuBold;
+      @include line-height(14, 18);
+      font-size: $font14px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 

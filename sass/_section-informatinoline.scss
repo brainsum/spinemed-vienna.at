@@ -1,63 +1,64 @@
 @import 'variables';
 
 .information-line {
-	background-color: $white;
-	padding-top: 50px;
-	padding-bottom: 65px;
+  background-color: $white;
+  padding-top: 50px;
+  padding-bottom: 65px;
 
-	p {
-		@include UbuntuMedium;
-		display: block;
-		font-size: $font18px;
-		text-transform: uppercase;
-		text-align: center;
-		margin-bottom: 35px;
-	}
+  p {
+    @include UbuntuMedium;
+    display: block;
+    font-size: $font18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+  }
 
-	.phone-holder {
-		text-align: center;
-		line-height: 1.68;
-		margin-bottom: 20px;
-		@media (min-width: $screen-md-min) {
-			text-align: end;
-			margin-bottom: 0;
-		}
-		@media (min-width: $screen-lg-min) {
-			text-align: start;
-		}
-		strong,
-		img {
-			display: inline-block;
-		}
-	}
+  .phone-holder {
+    text-align: center;
+    line-height: 1.68;
+    margin-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+      text-align: end;
+      margin-bottom: 0;
+    }
+    @media (min-width: $screen-lg-min) {
+      text-align: start;
+    }
 
-	strong {
-		@include UbuntuMedium;
-		font-size: $font30px;
-		color: $light-blue;
-	}
+    strong,
+    img {
+      display: inline-block;
+    }
+  }
 
-	img {
-		margin-right: 20px;
-		margin-top: -5px;
-	}
+  strong {
+    @include UbuntuMedium;
+    font-size: $font30px;
+    color: $light-blue;
+  }
 
-	.contact-btn {
-		@include border-bottom-radius(4px);
-		@include border-top-radius(4px);
-		@include UbuntuBold;
-		display: block;
-		width: 100%;
-		background-color: $white;
-		border: 2px solid $light-blue;
-		text-align: center;
-		line-height: 48px;
-		font-size: $font14px;
-		text-transform: uppercase;
-		color: $light-blue;
+  img {
+    margin-right: 20px;
+    margin-top: -5px;
+  }
 
-		&:hover {
-			background-color: $light-grey;
-		}
-	}
+  .contact-btn {
+    @include border-bottom-radius(4px);
+    @include border-top-radius(4px);
+    @include UbuntuBold;
+    display: block;
+    width: 100%;
+    background-color: $white;
+    border: 2px solid $light-blue;
+    text-align: center;
+    line-height: 48px;
+    font-size: $font14px;
+    text-transform: uppercase;
+    color: $light-blue;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
 }

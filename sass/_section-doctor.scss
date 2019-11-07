@@ -1,0 +1,98 @@
+@import 'variables';
+
+.doctor-holder {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  @include breakpoint(sm) {
+    padding-bottom: 0;
+  }
+
+  .img-holder {
+    text-align: center;
+    @include breakpoint(md) {
+      text-align: right;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    @include UbuntuMedium;
+    font-size: $font30px;
+    color: $grey-txt;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      height: 1px;
+      width: 70px;
+      background-color: $blue;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .content-holder {
+    padding-top: 50px;
+    @include breakpoint(md) {
+      padding-top: 150px;
+    }
+  }
+
+  p {
+    @include line-height(14, 22);
+    font-size: $font14px;
+  }
+
+  .btn {
+    @include border-bottom-radius(4px);
+    @include border-top-radius(4px);
+    @include UbuntuBold;
+    font-weight: 700;
+    display: block;
+    background-color: $white;
+    border: 2px solid $light-blue;
+    text-align: center;
+    line-height: 1.65;
+    font-size: $font14px;
+    text-transform: uppercase;
+    color: $light-blue;
+    margin-top: 2em;
+    padding: 1em 3em;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+
+.docfinder-holder {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: $blue;
+  color: $white;
+
+  h2 {
+    @include UbuntuMedium;
+    font-size: $font30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+
+    svg {
+      display: inline-block;
+      max-width: 150px;
+      position: relative;
+      top: 1px;
+      fill: $white;
+    }
+  }
+}

@@ -7,7 +7,7 @@
                 <h1>Bandscheibenvorfall?
                     <br>Rückenschmerzen?
                     <br>Ischias?</h1>
-                <h2>Die neue therapie aus USA!</h2>
+                <h2>Die neue Therapie aus USA!</h2>
                 <ul>
                     <li>Sie haben keine Lust auf Spritzen oder gar eine Operation?</li>
                     <li>Sie haben Rückenprobleme und schon vieles probiert, und haben immer noch Schmerzen?</li>

@@ -1,8 +1,9 @@
 <?php
 $title = "Behandlungsablauf der SpineMED | Rückenbeschwerden | HealthPi | Vienna";
+$description = "Das SpineMED® System führt selbständig und computergesteuert eine intermittierende Dehnung (dynamische Distraktion) der Wirbelsäule durch.";
 
-/* PAGE HEAD
-************/
+  /* PAGE HEAD
+  ************/
 include('head.php');
 
 /* MENU SECTION

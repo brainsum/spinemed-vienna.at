@@ -1,8 +1,9 @@
 <?php
 $title = "Impressum | Rückenbehandlung | Rückenprobleme | SpineMED Vienna";
+$description = "Impressum - MedRent GmbH, Weidacher Hauptstr. 62, 82515 Wolfratshausen, +49/ 176/ 305 171 25, +43/ 650/ 3777 200, Email: office@med-rent.de";
 
-/* PAGE HEAD
-************/
+  /* PAGE HEAD
+  ************/
 include('head.php');
 
 /* MENU SECTION

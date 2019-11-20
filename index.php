@@ -1,6 +1,7 @@
 <?php
 session_start();
 $title = "Bandscheibenvorfall symptome | HWS | L5 S1 | Diskusprolaps | SpineMED Vienna";
+$description = "Bandscheibenvorfall?  Rückenschmerzen? Ischias? SpineMED - Die neue Therapie aus USA! Ohne Nebenwirkungen und ohne Operation. Absolut Sicher. Ohne Schmerzen.";
 
 /* PAGE HEAD
 ************/

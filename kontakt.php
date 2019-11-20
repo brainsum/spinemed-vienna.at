@@ -1,8 +1,9 @@
 <?php
 $title = "Kontakt | Rückenbehandlung | Rückenprobleme | SpineMED Vienna";
+$description = "Kontakt: HealthPi Medical Center, Wollzeile 1, 1010 Wien, Österreich, Telefon: +43 1 9974207 | Informieren sie sich auf diesen Seiten, oder rufen sie uns direkt in der Praxis an!";
 
-/* PAGE HEAD
-************/
+  /* PAGE HEAD
+  ************/
 include('head.php');
 
 /* MENU SECTION

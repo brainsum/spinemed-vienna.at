@@ -59,6 +59,15 @@ if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'htt
         ga('set', 'anonymizeIp', true);
         ga('send', 'pageview');
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-982J7G1005"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-982J7G1005');
+    </script>
     <script src='https://www.google.com/recaptcha/api.js?hl=de-AT'></script>
 </head>
 <body>

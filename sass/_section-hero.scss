@@ -21,16 +21,16 @@
   h1 {
     text-align: center;
     color: #e81717;
-    font-size: 36px;
+    font-size: $font36px;
     font-weight: 700;
     font-style: italic;
 
     @media (min-width: $screen-sm-min) {
-      font-size: 48px;
+      font-size: $font48px;
     }
 
     @media (min-width: $screen-md-min) {
-      font-size: 60px;
+      font-size: $font60px;
     }
 
   }

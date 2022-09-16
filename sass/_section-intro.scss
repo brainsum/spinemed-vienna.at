@@ -20,21 +20,19 @@
 
   h2 {
     @include UbuntuMedium;
-    @include line-height(24, 30);
     color: $dark-blue-txt;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 12px;
-    font-size: $font24px;
+    font-size: $font28px;
+    line-height: 1.2;
     text-align: center;
     @media (min-width: $screen-sm-min) {
-      font-size: $font30px;
+      font-size: $font36px;
       text-align: start;
-      @include line-height(30, 40);
     }
     @media (min-width: $screen-md-min) {
-      font-size: $font36px;
-      @include line-height(36, 40);
+      font-size: $font42px;
     }
   }
 
@@ -62,7 +60,7 @@
   }
 
   p {
-    font-size: $font14px;
+    font-size: $font16px;
     text-align: center;
     @media (min-width: $screen-sm-min) {
       text-align: left;
@@ -74,7 +72,7 @@
   ul {
     margin-left: 1em;
     padding-left: 0.5em;
-    font-size: $font14px;
+    font-size: $font16px;
     li {
       list-style-type: disc;
       margin: 0.5em 0;
@@ -87,26 +85,6 @@
     margin: 22px auto;
     @media (min-width: $screen-sm-min) {
       margin: 22px 0 0;
-    }
-  }
-
-  .intro-img {
-    height: 100%;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      width: auto;
-      display: block;
-      margin: 0 auto;
-      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-        width: 115%;
-        max-width: none;
-      }
-      @media (min-width: $screen-md-min) {
-        margin: 110px auto 0;
-      }
-
     }
   }
 }

@@ -24,6 +24,7 @@ if(isset($_SESSION['MSG']))
     session_destroy();
 }
 
+include('inc/section-hero.php');
 include('inc/section-intro.php');
 include('inc/section-iconline.php');
 include('inc/section-quotes.php');

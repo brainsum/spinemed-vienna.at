@@ -1,0 +1,37 @@
+@import 'variables';
+
+.hero-holder {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  padding: 70px 0;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 140px 0;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 200px 20px;
+  }
+}
+
+.hero-title {
+  border: 2px solid #fff;
+  padding: 2px;
+
+  h1 {
+    text-align: center;
+    color: #e81717;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 48px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: 60px;
+    }
+
+  }
+}

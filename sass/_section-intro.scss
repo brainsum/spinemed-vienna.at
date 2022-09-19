@@ -39,14 +39,16 @@
   h3 {
     margin-bottom: 0.25em;
     text-align: center;
+    font-size: $font18px;
     @media (min-width: $screen-sm-min) {
       text-align: left;
+      font-size: $font22px;
     }
   }
 
   strong {
     @include UbuntuBold;
-    font-size: $font16px;
+    font-size: $font18px;
     margin-top: 22px;
     text-align: center;
     text-transform: uppercase;
@@ -64,6 +66,7 @@
     text-align: center;
     @media (min-width: $screen-sm-min) {
       text-align: left;
+      font-size: $font18px;
     }
   }
 
@@ -73,6 +76,9 @@
     margin-left: 1em;
     padding-left: 0.5em;
     font-size: $font16px;
+    @media (min-width: $screen-sm-min) {
+      font-size: $font18px;
+    }
     li {
       list-style-type: disc;
       margin: 0.5em 0;

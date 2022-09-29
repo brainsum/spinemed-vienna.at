@@ -40,6 +40,9 @@ if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'htt
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
           rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="css/screen.css" rel="stylesheet">
     <script src="js/dist/cookieconsent.min.js"></script>
     <script src="js/dist/cookieconsent.config.js"></script>

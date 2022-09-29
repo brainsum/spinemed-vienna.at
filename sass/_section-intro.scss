@@ -24,9 +24,12 @@
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 12px;
-    font-size: $font28px;
+    font-size: $font23px;
     line-height: 1.2;
     text-align: center;
+    @media (min-width: 380px) {
+      font-size: $font28px;
+    }
     @media (min-width: $screen-sm-min) {
       font-size: $font36px;
       text-align: start;

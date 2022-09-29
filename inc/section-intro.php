@@ -1,7 +1,7 @@
 <section class="intro-holder">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-6 intro-text">
+            <div class="col-xs-12 col-md-8 col-md-offset-2 intro-text">
                 <img class="spinemed-logo" src="img/spinmed-logo.png"
                      alt="Dekompressionssystem | Bandscheibenvorfall | SpineMED Therapie">
                 <h2>Bandscheibenvorfall?
@@ -18,10 +18,6 @@
                     Therapie:</strong>
                 <img class="healthpi-logo" src="img/healthpi-logo.png"
                      alt="HealthPi | SpineMED Therapie">
-            </div>
-            <div class="col-xs-12 col-md-6 intro-img">
-                <img src="img/img-spinemed-spinepain.png"
-                     alt="Wirbelsäulenerkrankungen | Bandscheibenvorfall | SpineMED Therapie">
             </div>
         </div>
     </div>

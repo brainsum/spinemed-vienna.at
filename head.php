@@ -1,5 +1,5 @@
 <?php
-if (((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && preg_match("/med-rent.de$/", $_SERVER['HTTP_HOST'])) || $_SERVER['HTTP_HOST'] == 'med-rent.de') {
+/*if (((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && preg_match("/med-rent.de$/", $_SERVER['HTTP_HOST'])) || $_SERVER['HTTP_HOST'] == 'med-rent.de') {
   $location = 'https://' . 'www.spinemed-vienna.at' . $_SERVER['REQUEST_URI'];
   header('HTTP/1.1 301 Moved Permanently');
   header('Location: ' . $location);
@@ -11,7 +11,7 @@ if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'htt
   header('Location: ' . $location);
   exit;
 }
-?>
+*/?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -46,6 +46,11 @@ if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'htt
     <link href="css/screen.css" rel="stylesheet">
     <script src="js/dist/cookieconsent.min.js"></script>
     <script src="js/dist/cookieconsent.config.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LezR7QiAAAAAG7dqB3Kw4urwjgyfZ62oGWoYKyE&lang=de-AT"></script>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -71,6 +76,5 @@ if ((($_SERVER['HTTPS'] === "off" || $_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'htt
 
         gtag('config', 'G-982J7G1005');
     </script>
-    <script src='https://www.google.com/recaptcha/api.js?hl=de-AT'></script>
 </head>
 <body>

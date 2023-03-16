@@ -33,10 +33,28 @@ require_once('config.inc.php');
 					<input type="text" name="name" id="name" placeholder="Name" value="" required>
 					<input type="email" name="email" id="email" placeholder="E-mail" value="" required>
 					<input type="text" name="betreff" id="betreff" placeholder="Telefonnummer (optional)" value="" required>
-					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" value="" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="<?php echo(RECAPTCHA_SITE); ?>"></div>
+					<textarea name="nachricht" id="nachricht" rows="3" placeholder="Nachricht" required></textarea>
                     <input type="submit" class="contact-submit" value="Nachricht senden" title="Nachricht senden">
 				</form>
+                <script>
+                    var $form = $('#contact-form-for-submit');
+
+                    $form.submit(function(event) {
+                        event.preventDefault();
+                        var name = $('#name').val();
+                        var email = $('#email').val();
+                        var tel = $('#text').val();
+                        var message = $('#nachricht').val();
+
+                        grecaptcha.ready(function() {
+                            grecaptcha.execute('6LezR7QiAAAAAG7dqB3Kw4urwjgyfZ62oGWoYKyE', {action: 'send_message'}).then(function(token) {
+                                $form.prepend('<input type="hidden" name="token" value="' + token + '">');
+                                $form.prepend('<input type="hidden" name="action" value="send_message">');
+                                $form.unbind('submit').submit();
+                            });
+                        });
+                    });
+                </script>
 			</div>
 		</div>
 	</div>

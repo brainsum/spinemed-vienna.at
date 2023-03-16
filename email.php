@@ -23,7 +23,7 @@ $recaptcha = new \ReCaptcha\ReCaptcha(RECAPTCHA_SECRET_V3);
 
 $resp = $recaptcha->setExpectedHostname($_SERVER['HTTP_HOST'])
     ->setExpectedAction('send_message')
-    ->setScoreThreshold(0.5)
+    ->setScoreThreshold(0.9)
     ->verify($_POST['token'], $_SERVER['SERVER_NAME']);
 
 // verify the response

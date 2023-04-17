@@ -51,7 +51,7 @@ if ($resp->isSuccess()) {
   $mail->Host       = SMTP_HOST;
   $mail->SMTPDebug  = 0;
   $mail->SMTPAuth   = TRUE;
-  $mail->SMTPSecure = "ssl";
+  $mail->SMTPSecure = "tls";
   $mail->Port       = SMTP_PORT;
   $mail->Username   = SMTP_USER;
   $mail->Password   = SMTP_PASS;
